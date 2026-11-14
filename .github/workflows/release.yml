@@ -1,4 +1,5 @@
 name: "publish"
+
 on:
   push:
     tags:
@@ -23,6 +24,9 @@ jobs:
 
       - name: install dependencies
         run: npm install
+
+      - name: fetch sidecars
+        run: npm run setup
 
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
