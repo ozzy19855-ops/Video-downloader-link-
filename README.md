@@ -18,3 +18,9 @@ Built with **Tauri + Rust** for a tiny footprint and powered by **[yt-dlp](https
 - **Monochrome dark UI.** Deep blacks, charcoal grays, thin borders, one muted error tone.
 - **Real installers.** Windows setup wizard (`.exe`), macOS `.dmg`, Linux `.AppImage`. End users need no terminal, Node.js, Python, yt-dlp or ffmpeg; everything is bundled.
   
+
+https://github.com/user-attachments/assets/91d5e95e-bb13-447f-af3e-34ea7260a76d
+
+
+
+
