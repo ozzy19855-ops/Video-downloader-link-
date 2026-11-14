@@ -1,0 +1,21 @@
+{
+  "name": "siphonpull",
+  "version": "0.1.0",
+  "description": "Minimal native desktop video downloader built on Tauri, Rust and yt-dlp.",
+  "private": true,
+  "license": "MIT",
+  "author": "SiphonPull contributors",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "setup": "node scripts/fetch-sidecars.mjs",
+    "dev": "npm run setup && tauri dev",
+    "build": "npm run setup && tauri build",
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "ffmpeg-static": "^5.2.0"
+  }
+}
