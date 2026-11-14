@@ -28,9 +28,11 @@ jobs:
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
 
-      - name: install dependencies (windows)
+      - name: install dependencies and fetch sidecars
         if: matrix.platform == 'windows-latest'
-        run: npm install
+        run: |
+          npm install
+          npm run setup
 
       - name: run Tauri build
         uses: tauri-apps/tauri-action@v0
