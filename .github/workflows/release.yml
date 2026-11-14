@@ -1,21 +1,17 @@
-name: Release
-
+name: "publish"
 on:
   push:
     tags:
-      - "v*"
+      - 'v*'
 
 jobs:
-  build:
+  publish-release:
     permissions:
       contents: write
     strategy:
       fail-fast: false
       matrix:
-        include:
-          - platform: windows-latest
-            args: ""
-
+        platform: [macos-latest, ubuntu-22_04, windows-latest]
     runs-on: ${{ matrix.platform }}
     steps:
       - uses: actions/checkout@v4
@@ -28,13 +24,19 @@ jobs:
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
 
-      - name: install dependencies and fetch sidecars
-        if: matrix.platform == 'windows-latest'
+      - name: install dependencies (Ubuntu only)
+        if: matrix.platform == 'ubuntu-22_04'
         run: |
-          npm install
-          npm run setup
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.0-dev libgtk-3-dev libayatana-appindicator3-dev librsvg2-dev patchelf
 
-      - name: run Tauri build
-        uses: tauri-apps/tauri-action@v0
+      - name: Tauri Action
+        uses: tauri-apps/tauri-action@v0.5.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tagName: v__VERSION__
+          releaseName: "SiphonPull v__VERSION__"
+          releaseBody: "Automated cross-platform build for SiphonPull."
+          releaseDraft: false
+          prerelease: false
