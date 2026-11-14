@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>SiphonPull</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header class="top">
+      <span class="brand">siphonpull</span>
+      <label class="toggle" title="Queue links automatically when you copy them">
+        <input id="watch" type="checkbox" />
+        <span class="box"></span>
+        <span>watch clipboard</span>
+      </label>
+    </header>
+
+    <main>
+      <section class="hero">
+        <input
+          id="url"
+          type="text"
+          spellcheck="false"
+          autocomplete="off"
+          autofocus
+          placeholder="Paste a link and press Enter"
+        />
+        <div id="hint" class="hint">YouTube, TikTok and 1000+ other sites</div>
+
+        <div class="options">
+          <div class="segmented" role="group" aria-label="Download type">
+            <button id="mode-video" type="button">Video</button>
+            <button id="mode-audio" type="button">Audio</button>
+          </div>
+          <select id="quality" aria-label="Quality"></select>
+          <button id="dir" type="button" class="dir" title="Choose download folder">
+            <span class="dir-label">Folder</span>
+            <span id="dir-path" class="dir-path"></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="queue-wrap">
+        <div class="queue-head">
+          <span>Queue</span>
+          <button id="clear" type="button" class="link">Clear finished</button>
+        </div>
+        <ul id="queue" class="queue"></ul>
+        <div id="empty" class="empty">Nothing here yet.</div>
+      </section>
+    </main>
+
+    <footer>
+      <span id="version">yt-dlp: checking…</span>
+      <span>Only download content you have the right to save.</span>
+    </footer>
+  </body>
+</html>

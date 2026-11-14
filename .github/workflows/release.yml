@@ -1,0 +1,298 @@
+PS C:\Users\W1ng3\Downloads\SiphonPull> name: "Release"
+name: : The term 'name:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ name: "Release"
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (name::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull> 
+PS C:\Users\W1ng3\Downloads\SiphonPull> on:
+on: : The term 'on:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, 
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ on:
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (on::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>   push:
+push: : The term 'push:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:3
++   push:
++   ~~~~~
+    + CategoryInfo          : ObjectNotFound: (push::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>     tags:
+tags: : The term 'tags:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:5
++     tags:
++     ~~~~~
+    + CategoryInfo          : ObjectNotFound: (tags::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>       - "v*"
+Cannot convert value "v*" to type "System.Int32". Error: "Input string was not in a correct format."
+At line:1 char:7
++       - "v*"
++       ~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvalidCastFromStringToInteger
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull> 
+PS C:\Users\W1ng3\Downloads\SiphonPull> jobs:
+jobs: : The term 'jobs:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ jobs:
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (jobs::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>   build:
+build: : The term 'build:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:3
++   build:
++   ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (build::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>     permissions:
+permissions: : The term 'permissions:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:5
++     permissions:
++     ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (permissions::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>       contents: write
+contents: : The term 'contents:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling 
+of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:7
++       contents: write
++       ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (contents::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>     strategy:
+strategy: : The term 'strategy:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling 
+of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:5
++     strategy:
++     ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (strategy::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>       fail-fast: false
+fail-fast: : The term 'fail-fast:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling 
+of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:7
++       fail-fast: false
++       ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (fail-fast::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>       matrix:
+matrix: : The term 'matrix:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of 
+the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:7
++       matrix:
++       ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (matrix::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>         include:
+include: : The term 'include:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of 
+the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:9
++         include:
++         ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (include::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>           - platform: windows-latest
+At line:1 char:12
++           - platform: windows-latest
++            ~
+Missing expression after unary operator '-'.
+At line:1 char:13
++           - platform: windows-latest
++             ~~~~~~~~~
+Unexpected token 'platform:' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingExpressionAfterOperator
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>             args: ""
+args: : The term 'args:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:13
++             args: ""
++             ~~~~~
+    + CategoryInfo          : ObjectNotFound: (args::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull> 
+PS C:\Users\W1ng3\Downloads\SiphonPull>     runs-on: ${{ matrix.platform }}
+At line:1 char:17
++     runs-on: ${{ matrix.platform }}
++                 ~
+Use `{ instead of { in variable names.
+At line:1 char:35
++     runs-on: ${{ matrix.platform }}
++                                   ~
+Unexpected token '}' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : OpenBraceNeedsToBeBackTickedInVariableName
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>     steps:
+steps: : The term 'steps:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:5
++     steps:
++     ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (steps::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>       - uses: actions/checkout@v4
+At line:1 char:8
++       - uses: actions/checkout@v4
++        ~
+Missing expression after unary operator '-'.
+At line:1 char:9
++       - uses: actions/checkout@v4
++         ~~~~~
+Unexpected token 'uses:' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingExpressionAfterOperator
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull> 
+PS C:\Users\W1ng3\Downloads\SiphonPull>       - name: setup node
+At line:1 char:8
++       - name: setup node
++        ~
+Missing expression after unary operator '-'.
+At line:1 char:9
++       - name: setup node
++         ~~~~~
+Unexpected token 'name:' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingExpressionAfterOperator
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>         uses: actions/setup-node@v4
+uses: : The term 'uses:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:9
++         uses: actions/setup-node@v4
++         ~~~~~
+    + CategoryInfo          : ObjectNotFound: (uses::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>         with:
+with: : The term 'with:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:9
++         with:
++         ~~~~~
+    + CategoryInfo          : ObjectNotFound: (with::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>           node-version: 20
+node-version: : The term 'node-version:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:11
++           node-version: 20
++           ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (node-version::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull> 
+PS C:\Users\W1ng3\Downloads\SiphonPull>       - name: install Rust stable
+At line:1 char:8
++       - name: install Rust stable
++        ~
+Missing expression after unary operator '-'.
+At line:1 char:9
++       - name: install Rust stable
++         ~~~~~
+Unexpected token 'name:' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingExpressionAfterOperator
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>         uses: dtolnay/rust-toolchain@stable
+uses: : The term 'uses:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:9
++         uses: dtolnay/rust-toolchain@stable
++         ~~~~~
+    + CategoryInfo          : ObjectNotFound: (uses::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull> 
+PS C:\Users\W1ng3\Downloads\SiphonPull>       - name: install dependencies (windows)
+At line:1 char:8
++       - name: install dependencies (windows)
++        ~
+Missing expression after unary operator '-'.
+At line:1 char:9
++       - name: install dependencies (windows)
++         ~~~~~
+Unexpected token 'name:' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingExpressionAfterOperator
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>         if: matrix.platform == 'windows-latest'
+if: : The term 'if:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, 
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:9
++         if: matrix.platform == 'windows-latest'
++         ~~~
+    + CategoryInfo          : ObjectNotFound: (if::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>         run: npm install
+run: : The term 'run:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:9
++         run: npm install
++         ~~~~
+    + CategoryInfo          : ObjectNotFound: (run::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull> 
+PS C:\Users\W1ng3\Downloads\SiphonPull>       - name: run Tauri build
+At line:1 char:8
++       - name: run Tauri build
++        ~
+Missing expression after unary operator '-'.
+At line:1 char:9
++       - name: run Tauri build
++         ~~~~~
+Unexpected token 'name:' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingExpressionAfterOperator
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>         uses: tauri-apps/tauri-action@v0
+uses: : The term 'uses:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:9
++         uses: tauri-apps/tauri-action@v0
++         ~~~~~
+    + CategoryInfo          : ObjectNotFound: (uses::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>         env:
+env: : The term 'env:' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:9
++         env:
++         ~~~~
+    + CategoryInfo          : ObjectNotFound: (env::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\W1ng3\Downloads\SiphonPull>           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
