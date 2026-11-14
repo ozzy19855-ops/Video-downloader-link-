@@ -26,4 +26,3 @@ Built with **Tauri + Rust** for a tiny footprint and powered by **[yt-dlp](https
   - **Linux:** `libwebkit2gtk-4.1-dev build-essential curl wget file libxdo-dev libssl-dev libayatana-appindicator3-dev librsvg2-dev`
   - **Windows:** Microsoft C++ Build Tools and WebView2 (preinstalled on Windows 10/11)
   - **macOS:** Xcode Command Line Tools (`xcode-select --install`)
-
