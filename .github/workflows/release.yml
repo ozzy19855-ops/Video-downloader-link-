@@ -51,6 +51,8 @@ jobs:
         uses: tauri-apps/tauri-action@v0.6.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Forces Xcode toolchain targets correctly on macOS runners
+          APPLE_SIGNING_IDENTITY: ""
         with:
           tagName: v0.1.22
           releaseName: "SiphonPull v0.1.22"
