@@ -16,5 +16,5 @@ Built with **Tauri + Rust** for a tiny footprint and powered by **[yt-dlp](https
 - **Monochrome dark UI.** Deep blacks, charcoal grays, thin borders, one muted error tone.
 - **Real installers.** Windows setup wizard (`.exe`), macOS `.dmg`, Linux `.AppImage`. End users need no terminal, Node.js, Python, yt-dlp or ffmpeg; everything is bundled.
 
-IF IT SAYS SMT LIKE COULDN'T FIND PATH ITS STILL DOWNLOADED JUST YOU HAVE TO GO TO THE AREA YOU PUT WERE YOU VIDEOS GO JUST WATCH THE VIDEO BELOW
+IF IT SAYS SMT LIKE COULDN'T FIND PATH ITS STILL DOWNLOADED JUST YOU HAVE TO GO TO THE AREA YOU PUT WERE YOUR VIDEOS GO JUST WATCH THE VIDEO BELOW
 
