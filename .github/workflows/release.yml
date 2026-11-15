@@ -12,7 +12,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-<<<<<<< HEAD
         include:
           - platform: macos-latest
             target: aarch64-apple-darwin
@@ -22,9 +21,6 @@ jobs:
             target: x86_64-unknown-linux-gnu
           - platform: windows-latest
             target: x86_64-pc-windows-msvc
-=======
-        platform: [macos-latest, ubuntu-22.04, windows-latest]
->>>>>>> 47ea9e33720803772f98ad9b4bf40e1561411762
     runs-on: ${{ matrix.platform }}
     steps:
       - uses: actions/checkout@v4
@@ -56,13 +52,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tagName: v__VERSION__
-          releaseName: "SiphonPull v__VERSION__"
+          tagName: v0.1.22
+          releaseName: "SiphonPull v0.1.22"
           releaseBody: "Automated cross-platform build for SiphonPull."
           releaseDraft: false
-<<<<<<< HEAD
           prerelease: false
           args: ${{ matrix.target && format('--target {0}', matrix.target) || '' }}
-=======
-          prerelease: false
->>>>>>> 47ea9e33720803772f98ad9b4bf40e1561411762
