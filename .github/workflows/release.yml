@@ -8,15 +8,15 @@ on:
 jobs:
   publish-release:
     permissions:
-      contents: write
+  contents: write
     strategy:
       fail-fast: false
       matrix:
         include:
           - platform: macos-latest
-            target: x86_64-apple-darwin
-          - platform: macos-latest
             target: aarch64-apple-darwin
+          - platform: macos-latest
+            target: x86_64-apple-darwin
           - platform: ubuntu-22.04
             target: x86_64-unknown-linux-gnu
           - platform: windows-latest
@@ -53,6 +53,7 @@ jobs:
         uses: tauri-apps/tauri-action@v0.6.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CARGO_BUILD_TARGET: ${{ matrix.target }}
         with:
           tagName: v0.1.22
           releaseName: "SiphonPull v0.1.22"
