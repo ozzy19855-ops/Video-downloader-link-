@@ -36,7 +36,20 @@ jobs:
       - name: fetch sidecars
         env:
           TAURI_ENV_TARGET_TRIPLE: ${{ matrix.target }}
-        run: npm run setup
+          TARGET: ${{ matrix.target }}
+        run: |
+          node -e '
+            const fs = require("fs");
+            const path = require("path");
+            const target = process.env.TAURI_ENV_TARGET_TRIPLE;
+            console.log("Target architecture for sidecars:", target);
+            
+            // Ensure src-tauri/binaries exists
+            fs.mkdirSync("src-tauri/binaries", { recursive: true });
+            
+            // Run standard setup if it handles it, or map target
+          '
+          npm run setup
 
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
