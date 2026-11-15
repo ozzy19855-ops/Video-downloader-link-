@@ -13,10 +13,10 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - platform: macos-13
+            target: x86_64-apple-darwin
           - platform: macos-latest
             target: aarch64-apple-darwin
-          - platform: macos-latest
-            target: x86_64-apple-darwin
           - platform: ubuntu-22.04
             target: x86_64-unknown-linux-gnu
           - platform: windows-latest
@@ -34,6 +34,8 @@ jobs:
         run: npm install
 
       - name: fetch sidecars
+        env:
+          TAURI_ENV_TARGET_TRIPLE: ${{ matrix.target }}
         run: npm run setup
 
       - name: install Rust stable
@@ -51,8 +53,6 @@ jobs:
         uses: tauri-apps/tauri-action@v0.6.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Forces Xcode toolchain targets correctly on macOS runners
-          APPLE_SIGNING_IDENTITY: ""
         with:
           tagName: v0.1.22
           releaseName: "SiphonPull v0.1.22"
