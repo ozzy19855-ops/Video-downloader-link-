@@ -12,7 +12,7 @@
     "setup": "node scripts/fetch-sidecars.mjs",
     "dev": "npm run setup && tauri dev",
     "build": "npm run setup && tauri build",
-    "tauri": "tauri"
+    "tauri": "npm run setup && tauri"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^2",
