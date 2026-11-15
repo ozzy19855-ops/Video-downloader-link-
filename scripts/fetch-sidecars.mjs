@@ -11,15 +11,18 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = path.join(root, 'src-tauri', 'binaries');
 mkdirSync(outDir, { recursive: true });
 
-const triple =
-  process.env.TARGET_TRIPLE ||
+const triple = 
+  process.env.TAURI_ENV_TARGET_TRIPLE || 
+  process.env.TARGET_TRIPLE || 
   execSync('rustc -vV').toString().match(/host:\s*(\S+)/)[1];
+
 const isWin = triple.includes('windows');
 const isMac = triple.includes('apple-darwin');
 const isArmLinux = triple.startsWith('aarch64') && triple.includes('linux');
-const ext = isWin ? '.exe' : '';
 
+const ext = isWin ? '.exe' : '';
 const ytAsset = isWin ? 'yt-dlp.exe' : isMac ? 'yt-dlp_macos' : isArmLinux ? 'yt-dlp_linux_aarch64' : 'yt-dlp_linux';
+
 const ytDest = path.join(outDir, `yt-dlp-${triple}${ext}`);
 const ffDest = path.join(outDir, `ffmpeg-${triple}${ext}`);
 
