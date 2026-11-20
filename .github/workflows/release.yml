@@ -43,11 +43,9 @@ jobs:
             const path = require("path");
             const target = process.env.TAURI_ENV_TARGET_TRIPLE;
             console.log("Target architecture for sidecars:", target);
-            
+
             // Ensure src-tauri/binaries exists
             fs.mkdirSync("src-tauri/binaries", { recursive: true });
-            
-            // Run standard setup if it handles it, or map target
           '
           npm run setup
 
@@ -68,9 +66,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CARGO_BUILD_TARGET: ${{ matrix.target }}
         with:
-          tagName: v0.1.22
-          releaseName: "SiphonPull v0.1.22"
-          releaseBody: "Automated cross-platform build for SiphonPull."
+          tagName: ${{ github.ref_name }}
+          releaseName: "SiphonPull ${{ github.ref_name }}"
+          releaseBody: "Automated cross-platform build for SiphonPull ${{ github.ref_name }}."
           releaseDraft: false
           prerelease: false
           args: ${{ matrix.target && format('--target {0}', matrix.target) || '' }}
